@@ -24,9 +24,7 @@ public class LoginPage extends PageBase {
     private WebElement loginButton;
 
     // ==========Constructor========
-    public LoginPage(WebDriver injectedDriver) {
-        super(injectedDriver);
-        getDriver().get("https://trello.com/login?returnUrl=%2F");
+    public LoginPage() {
         PageFactory.initElements(getDriver(), this);
     }
 
@@ -42,4 +40,8 @@ public class LoginPage extends PageBase {
         String textContent = bannerText.getText();
         return textContent;
     }
+
+
+
+
 }

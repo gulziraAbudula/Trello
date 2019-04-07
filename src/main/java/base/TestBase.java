@@ -23,7 +23,8 @@ public class TestBase {
     }
 
     @After
-    public void cleanUp() {
+    public void cleanUp() throws InterruptedException {
+        Thread.sleep(2000);
         if (driver != null) {
             driver.close();
             driver.quit();

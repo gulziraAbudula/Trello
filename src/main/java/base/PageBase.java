@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class PageBase {
 
-    private WebDriver driver;
+    private static WebDriver driver;
 
     public PageBase(WebDriver inputDriver) {
         this.driver = inputDriver;
@@ -15,7 +15,7 @@ public class PageBase {
         return driver;
     }
 
-
+    public PageBase(){}
     public void wait(int second) {
         try {
             Thread.sleep(second, 10000);

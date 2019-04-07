@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         , "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-extentReports/report.html"},
         features = {"classpath:trello_feature"},
         tags = {"@login"},
-        dryRun = true)
+        dryRun = false)
 
 public class TestRunner {
 }
